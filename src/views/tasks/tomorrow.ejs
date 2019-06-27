@@ -1,0 +1,13 @@
+<h1>Amanhã</h1>
+<form action="/create/tomorrow" method="post">
+  <input type="text" class="input" name="name" placeholder="O que eu quero que seja criado" autofocus>
+</form>
+
+<% for (task of tasks) { %>
+  <div class="task-list">
+    <div class="row <%= task.tag %>">
+      <a class="task-item" href="/finish/<%= task.id %>"><%= task.name.length > 30 ? task.name.substring(0,30) + "..." : task.name  %></a>
+      <a class="task-item right" href="/delete/<%= task.id %>">X</a>
+    </div>
+  </div>
+<% }; %>

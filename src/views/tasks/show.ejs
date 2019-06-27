@@ -1,0 +1,16 @@
+<h3>Editing Task</h3>
+<form action="/update" method="post">
+  <div class="row">
+    <div class="six columns">
+      <label for="name">Task ID</label>
+      <input class="u-full-width" type="text" name="id" value="<%= task.id %>" disabled>
+    </div>
+    <div class="six columns">
+      <label for="name">Task Name</label>
+      <input class="u-full-width" type="text" name="name" value="<%= task.name %>" required>
+    </div>
+  </div>
+  <label for="description">Task Description</label>
+  <textarea class="u-full-width" name="description" rows="3" required><%= task.description %></textarea>
+  <button type="submit">send</button>
+</form>

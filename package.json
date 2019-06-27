@@ -1,0 +1,38 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "Simple Todo app made with <3 and NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Todo",
+    "NodeJS",
+    "ExpressJS",
+    "Basic",
+    "App",
+    "Webapp",
+    "Docker",
+    "MongoDB"
+  ],
+  "author": "Jack Oliveira",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "mongoose": "^5.5.12",
+    "nodemon": "^1.19.1",
+    "require-dir": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-google": "^0.13.0",
+    "eslint-plugin-import": "^2.17.3"
+  }
+}

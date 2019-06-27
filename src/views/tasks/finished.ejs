@@ -1,0 +1,13 @@
+<% if (tasks.length > 0) { %> 
+  <h1>Finalizadas</h1>
+  <% for (task of tasks) { %>
+    <div class="task-list">
+      <div class="row <%= task.tag %>">
+        <a class="task-item item" href="/finish/<%= task.id %>"><%= task.name.length > 30 ? task.name.substring(0,30) + "..." : task.name  %></a>
+        <a class="task-item right" href="/delete/<%= task.id %>">X</a>
+      </div>
+    </div>
+  <% }; %>
+<% } else { %>
+  <h5>Você não tem tarefas finaliadas.</h5>
+<% }; %>
